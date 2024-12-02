@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-main {
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.vendedores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.vendedor-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+}
+
+.gauge-wrapper {
+  width: 500px;
+  height: 300px;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gauge-wrapper > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.gauge-value {
+  position: relative;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Estilos para o login */
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.login-container h2 {
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.senha-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #1976d2;
+}
+
+.erro-mensagem {
+  color: #f44336;
+  margin-top: 10px;
+}
+
+/* Tema Escuro */
+.tema-escuro {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.tema-escuro .App-main {
+  background-color: #1a1a1a;
+}
+
+.tema-escuro .vendedor-card {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tema-escuro .login-container {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.tema-escuro .login-container h2 {
+  color: #ffffff;
+}
+
+.tema-escuro .senha-input {
+  background-color: #1a1a1a;
+  border-color: #3d3d3d;
+  color: #ffffff;
+}
+
+.tema-escuro .senha-input::placeholder {
+  color: #888;
+}
